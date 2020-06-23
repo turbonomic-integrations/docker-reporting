@@ -7,6 +7,7 @@ RUN buildDeps='gcc make automake gcc-c++ libxml2-devel libxslt-devel' && \
     pip install pymysql && \
     pip install numpy && \
     pip install lxml && \
+    pip install vmtreport && \
     yum -y remove $buildDeps && \
     yum -y clean all --enablerepo='*'
 

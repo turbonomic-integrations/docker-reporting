@@ -4,4 +4,5 @@ RUN apk add --no-cache --virtual .build-deps gcc make automake g++ libxml2-dev l
     pip install pymysql && \
     pip install numpy && \
     pip install lxml && \
+    pip install vmtreport && \
     apk del --no-network .build-deps

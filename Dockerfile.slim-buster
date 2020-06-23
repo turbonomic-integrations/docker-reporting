@@ -7,4 +7,5 @@ RUN buildDeps='gcc make automake g++ libxml2-dev libxslt-dev' && \
     pip install pymysql && \
     pip install numpy && \
     pip install lxml && \
+    pip install vmtreport && \
     apt-get purge -y --auto-remove $buildDeps
