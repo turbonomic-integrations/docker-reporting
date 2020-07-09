@@ -69,7 +69,7 @@ $ kubectl create job --from=cronjob/reportTest reportTest
 
 ## Configuration
 
-Please see the documentation for
+Please see the documentation of [vmtreport](https://pypi.org/project/vmtreport/) for details on how to create a configuration file.
 
 # Build
 
