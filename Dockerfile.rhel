@@ -1,14 +1,16 @@
-FROM turbointegrations/base:0.1-rhel
+FROM turbointegrations/base:1-rhel
 
 USER 0
 
 RUN buildDeps='gcc make automake gcc-c++ libxml2-devel libxslt-devel' && \
     yum -y install $buildDeps  && \
-    pip install pymysql && \
-    pip install numpy && \
-    pip install lxml && \
-    pip install vmtreport && \
+    pip install 'pymysql>=0.9.3,<1' && \
+    pip install 'numpy>=1.19.0,<2' && \
+    pip install 'lxml>=4.5.1,<5' && \
+    pip install 'vmtreport>=1.1.0,<2' && \
     yum -y remove $buildDeps && \
     yum -y clean all --enablerepo='*'
 
 USER 1001
+
+ENTRYPOINT ["vmtreport", "-c", "/opt/turbonomic/report.conf"]
