@@ -1,7 +1,11 @@
-FROM turbointegrations/base:0.1-alpine
+FROM turbointegrations/base:1-alpine
 
 RUN apk add --no-cache --virtual .build-deps gcc make automake g++ libxml2-dev libxslt-dev && \
-    pip install pymysql && \
-    pip install numpy && \
-    pip install lxml && \
+    pip install 'pymysql>=0.9.3,<1' && \
+    pip install 'numpy>=1.19.0,<2' && \
+    pip install 'lxml>=4.5.1,<5' && \
+    pip install 'vmtreport>=1.1.0,<2' && \
+    pip cache purge 2> /dev/null || true && \
     apk del --no-network .build-deps
+
+ENTRYPOINT ["vmtreport", "-c", "/opt/turbonomic/report.conf"]
