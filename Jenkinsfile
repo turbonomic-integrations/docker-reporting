@@ -21,7 +21,6 @@ pipeline {
 
         stage('Version Increment Check') {
             steps {
-                git 'file:///git/docker-base'
                 load "VERSION"
                 script {
                     env.FROM_VERSION="${MAJOR}.${MINOR}.${PATCH}"
@@ -40,9 +39,9 @@ pipeline {
                         // No idea why I can't simply redirect to manifest.${it} directly, but.. here we are
                         base_sha = sh(returnStdout: true, script: "docker inspect --format='{{index .RepoDigests 0}}' ${base_tag}").trim()
                         sh "echo ${base_sha} > manifest.${it}"
-                        sh "docker run --rm -i ${tag}:${it}-build sh -c \"python --version\" >> manifest.${it}"
-                        sh "docker run --rm -i ${tag}:${it}-build sh -c \"pip -V\" >> manifest.${it}"
-                        sh "docker run --rm -i ${tag}:${it}-build sh -c \"pip freeze\" >> manifest.${it}"
+                        sh "docker run --rm -i --entrypoint /bin/sh ${tag}:${it}-build -c \"python --version\" >> manifest.${it}"
+                        sh "docker run --rm -i --entrypoint /bin/sh ${tag}:${it}-build -c \"pip -V\" >> manifest.${it}"
+                        sh "docker run --rm -i --entrypoint /bin/sh ${tag}:${it}-build -c \"pip freeze\" >> manifest.${it}"
                     }
 
                     if (!FIRST_RUN) {
