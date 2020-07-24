@@ -1,0 +1,21 @@
+turbointegrations/base@sha256:8fc915042b9f97aad47236f4d0c38f62a44adf14e7e10eead8e16dc3b66b0a30
+Python 3.8.0
+pip 20.1.1 from /opt/app-root/lib64/python3.8/site-packages/pip (python 3.8)
+arbiter==1.1.1
+certifi==2020.6.20
+chardet==3.0.4
+dateutils==0.6.8
+idna==2.10
+lxml==4.5.2
+numpy==1.19.1
+PyMySQL==0.10.0
+python-dateutil==2.8.1
+pytz==2020.1
+PyYAML==5.3.1
+requests==2.24.0
+six==1.15.0
+umsg==1.0.4
+urllib3==1.25.10
+vmtconnect==3.3.0
+vmtplan==2.2.1
+vmtreport==1.1.0
