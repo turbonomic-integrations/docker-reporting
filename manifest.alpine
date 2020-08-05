@@ -1,0 +1,7 @@
+turbointegrations/base@sha256:d22eb43a17f462bde350d6825df54e893df9f802a340bce1052915f34faa1741
+Python 3.8.5
+pip 20.1.1 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
+lxml==4.5.2
+numpy==1.19.1
+PyMySQL==0.10.0
+vmtreport==1.1.0
