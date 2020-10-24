@@ -1,4 +1,4 @@
-turbointegrations/base@sha256:119beb7ad802592b7239e47d0d73392f0f9e0d07d0ef181e6452d332c2dc04b0
+turbointegrations/base@sha256:b7540b91c10d841e5fc0fa6b2944ccab589f2ea2722a189a72a252c5606e0a89
 Python 3.8.6
 pip 20.2.4 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
 lxml==4.6.1
