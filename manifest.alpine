@@ -1,6 +1,6 @@
-turbointegrations/base@sha256:c0d6e147725e98dc864e2534fcbe7d1bcbd73af4597adf8afccf4437e54996a5
+turbointegrations/base@sha256:2a40c5bb73e57b9ffb432e5499d11f9c3edf467cc116cebd48fd84298aab629f
 Python 3.8.6
-pip 20.2.4 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
+pip 20.3.1 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
 lxml==4.6.2
 numpy==1.19.4
 PyMySQL==0.10.1
