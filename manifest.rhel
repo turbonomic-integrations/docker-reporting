@@ -1,6 +1,6 @@
-turbointegrations/base@sha256:e625bd9cc3db7018a22ee450fddddc906997e7090d81922823e6ae43761e447d
+turbointegrations/base@sha256:e1bbc8cfdcbea05572c7dde34042afae4176aef062b3abda93f931715340ef33
 Python 3.8.3
-pip 20.3.1 from /opt/app-root/lib64/python3.8/site-packages/pip (python 3.8)
+pip 20.3.3 from /opt/app-root/lib64/python3.8/site-packages/pip (python 3.8)
 lxml==4.6.2
 numpy==1.19.4
 PyMySQL==0.10.1
