@@ -1,6 +1,6 @@
 turbointegrations/base@sha256:a66deacd3230755d4bd36d9ff475633a79d0c16e947e83867600179d9ea5171a
 Python 3.8.7
-pip 20.3.3 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
+pip 21.0 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
 lxml==4.6.2
 numpy==1.19.5
 PyMySQL==0.10.1
