@@ -1,7 +1,7 @@
-turbointegrations/base@sha256:6bb1c5d89f31e098600a1679b50948dc698f71e5983883a725409b8f30cf55e4
+turbointegrations/base@sha256:50a5f831075fecc7ffae9e5b4738c2a1d04c838a640290e12c4f1395f78863ae
 Python 3.8.7
 pip 21.0 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
 lxml==4.6.2
-numpy==1.19.5
+numpy==1.20.0
 PyMySQL==0.10.1
 vmtreport==1.2.1
