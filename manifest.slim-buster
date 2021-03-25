@@ -1,5 +1,5 @@
-turbointegrations/base@sha256:50a5f831075fecc7ffae9e5b4738c2a1d04c838a640290e12c4f1395f78863ae
-Python 3.8.7
+turbointegrations/base@sha256:88c3f89abd8f1785e7c637c64f6ed344ed30a63ddb3cf682e5be7c227cf7e2b9
+Python 3.8.8
 pip 21.0.1 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
 lxml==4.6.3
 numpy==1.20.1
