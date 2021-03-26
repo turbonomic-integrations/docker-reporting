@@ -4,7 +4,7 @@ def flavors="alpine,slim-buster,rhel"
 def tracked_modules=["pymysql","numpy","lxml","vmtreport"]
 
 pipeline {
-    agent any
+    agent { label 'linux && mavenpod' } 
     triggers { cron('0 0 * * *') }
     stages {
         stage('Build') {
