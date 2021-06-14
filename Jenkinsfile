@@ -5,7 +5,7 @@ def tracked_modules=["pymysql","numpy","lxml","vmtreport"]
 
 pipeline {
     agent { label 'linux && mavenpod' }
-    triggers { cron('0 0 * * *') }
+    triggers { cron('H H(4-7) * * *') }
     stages {
         stage('Build') {
             steps {
